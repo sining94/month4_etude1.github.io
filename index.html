@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="lee.css">
+    <title>Document</title>
+    <script>
+        $(function () {
+            var n = 0;
+            var wid = $("#train > div").width();
+            var pick;
+            setInterval(function () {
+               
+                $("#train > div").eq(n).addClass("lee");
+                $( $("#train > div")).not( $("#train > div").eq(n)).removeClass("lee"); 
+                n++;
+                if(n ==3){
+                    n=0;
+                }
+                
+            }, 3000);
+
+
+            $("#wrap1 > #cont2>  nav > div ").click(function () {
+                $(this).addClass("rock");
+                $($("#wrap1 > #cont2>  nav > div ").not(this).removeClass("rock"));
+                pick = $(this).index();
+                $("#cont2  ul > li").eq(pick).addClass("see");
+                $($("#cont2 > ul > li").not($("#cont2 > ul > li").eq(pick)).removeClass("see"));
+            });
+
+            console.log("선생님 감사드리고 사랑합니다 -용주-");
+
+
+
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <h1>CHALLENGE KOREA</h1>
+            <P>Chance. Change. Challenge</P>
+        </div>
+        <div id="login">
+            <div><a href="">LOGIN</a></div>
+            <div id="join"><a href="">JOIN</a></div>
+            <div id="sitemap"><a href="">SITEMAP</a></div>
+        </div>
+    </header>
+    <div id="menu">
+        <div> <a href="">Outdoor Training</a></div>
+        <div> <a href="">Indoor Training</a></div>
+        <div> <a href="">Challenge Adventure</a></div>
+        <div> <a href="">Event Program</a></div>
+        <div> <a href="">Photo Gallery</a></div>
+        <div> <a href="">Customer Center</a></div>
+        <div> <a href="">About Us </a></div>
+    </div>
+    <section id="first">
+        <div id="window">
+            <div id="train">
+                <div class="lee"><img src="img/image1.jpg" alt=""> </div>
+                <div><img src="img/image2.jpg" alt=""></div>
+                <div><img src="img/image3.jpg" alt=""></div>
+                <div><img src="img/image1.jpg" alt=""> </div>
+            </div>
+        </div>
+    </section>
+    <section id="two">
+        <div id="mid">
+            <p>챌린지 코리아<span> 프로그램 안내<div></div></span></p>
+        </div>
+        <div id="wrap1">
+            <div id="cont1"><img src="img/image6.jpg" alt="">
+                <p>의식고도화훈련 공동체베이스 챌린지어드벤처 스트레티지베이스</p>
+            </div>
+            <div id="cont2">
+                <h4>챌린지 코스</h4>
+                <nav>
+                    <div class="rock">1</div>
+                    <div>2</div>
+                </nav>
+                <ul>
+                    <li id="pic1" class="pic see">
+                        <div>
+                            <img src="img/one.png" alt="">
+                            <p>현대성우 코스</p>
+                            <span>현대성우리조트 내에 자리잡고 있는 코스는 서울 근교의 이점과 자연과 문명의
+                                편안함 속에서 도전과 ...
+                                오전 10:07 2021-04-01</span>
+                        </div>
+                    </li>
+                    <li id="pic2" class="pic">
+                        <div>
+                            <img src="img/two.png" alt="">
+                            <p>용인 코스</p>
+                            <span>용인에 자리잡은 챌린지 어드벤처 코스는
+                                한정된 공간을 최대한 이용할 수 있도록 효율적으로 설계되었으며 ...</span>
+                    </li>
+            </div>
+            </ul>
+        </div>
+        </div>
+        <div id="wrap2">
+            <div id="hot">HOTPROGRAM</div>
+            <div class="small">
+                <div id="small_pic1"></div>
+                <span>도미노 훈련</span>
+                <p>2차 대전 중, 어느 한 국가가 패망하여 적화되었을 때 그 여파로 인접 국가들도 연쇄적으로 적화되어 ...</p>
+            </div>
+            <div  class="small">
+                <div id="small_pic2"></div>
+                <span>공동체베이스 훈련</span>
+                <p>코스에 설치된 여러가지의 스테이션을 팀 단위로 직접 체험하여 코스 해결을 위하여 팀원 전체가 노력 ...</p>
+            </div>
+            <div  class="small">
+                <div id="small_pic3"></div>
+                <span>종주훈련</span>
+                <p>협동, 협력, 인화의 본질과 집단 공동체 의식 함양 프로그램으로 자연과 하나가 되어 개인의 극기 ...</p>
+            </div>
+        </div>
+        <div id="wrap3">
+            <div id="small_pic4"></div>
+            <div id="posi">
+                <span id="gall">포토갤러리</span>
+                <div id="go">GO</div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="bag">
+            <span><a href="#">챌린지코리아 소개</a></span>
+            <span><a href="#">클라이언트</a></span>
+            <span><a href="#">인재채용</a></span>
+            <span><a href="#">홍보자료</a></span>
+            <span><a href="#">사업제휴 문의</a></span>
+            <span><a href="#">Contact Us</a></span>
+        </div>
+        <div>
+            <span id="adr">
+                서울시 광진구 자양동 682-28 고려빌딩 2F (주) 챌린지코리아<br>
+                TEL : 02)3437-6104 Copyright(c)CHALLENGEKOREA Corp All Rights Reserved.
+            </span>
+            <div id="lastlogo"><img src="img/logo.png" alt=""></div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

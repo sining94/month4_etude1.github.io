@@ -1,0 +1,448 @@
+@charset "UTF-8";
+
+body, html {
+            background: #fff;
+            font-family: "Arial";
+        }
+
+        body {
+            width: 836px;
+            border: 1px solid black;
+            margin: auto;
+        }
+
+        header {
+            height: 70px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        a:visited{
+            text-decoration: none;
+        }
+
+        #logo {
+            background-image: url(img/logo.png);
+            width: 50px;
+            height: 50px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-left: 30px;
+            margin-top: 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        #logo>* {
+            position: absolute;
+            left: 50px;
+            top: 0px;
+            width: 160px;
+            color: gray;
+            text-align: center;
+            line-height: auto;
+        }
+
+        #logo>h1 {
+            font-size: 1em;
+            width: 200px;
+        }
+
+        #logo>p {
+            font-size: 10px;
+            top: 20px;
+        }
+
+        #login {
+            float: right;
+            width: 200px;
+            top: 0px;
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+
+        #login>div {
+            width: 50px;
+            font-family: Arial;
+            font-size: 7px;
+            float: left;
+            text-align: center;
+        }
+
+
+        #join,
+        #sitemap {
+            border-left: 1px solid black;
+        }
+
+        #menu {
+            width: 100%;
+            height: 50px;
+            background: #013567;
+        }
+
+        #menu>div {
+            float: left;
+            font-size: 12px;
+            width: 14%;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            color: #fff;
+        }
+
+        #first {
+            width: 100%;
+            height: 300px;
+        }
+
+        #window {
+            width: 90%;
+            height: 90%;
+            margin: auto;
+            margin-top: 10px;
+            position: relative;
+        }
+
+        #train {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #train>div {
+            position: absolute;
+            float: left;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: 0.5s;
+        }
+        #train>div.lee {
+            opacity: 1;
+        }
+
+        #train>div>img {
+            width: 100%;
+            height: 100%;
+            float: left;
+            color: #06c;
+        }
+
+        #two {
+            width: 90%;
+            height: 430px;
+            margin: auto;
+        }
+
+        #two>#mid {
+            background: #013567;
+            width: 100%;
+            height: 20px;
+            text-align: center;
+            font-weight: 600;
+            font-family: "돋움체";
+            margin-bottom: 20px;
+        }
+
+        #two #mid p {
+            margin: 0;
+            width: 35%;
+            height: 20px;
+            font-size: 14px;
+            background: white;
+            text-align: center;
+            line-height: 20px;
+            color: rgb(47, 0, 158);
+        }
+
+        #two > #mid> p >  span {
+            color: rgb(35, 171, 224);
+        }
+
+        #wrap1 {
+            width: 60%;
+            height: 370px;
+            float: left;
+        }
+
+        #cont1 {
+            width: 100%;
+            height: 30%;
+            border: 4px solid #666;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #cont1>img {
+            width: 95%;
+            height: 50%;
+            margin: 10px;
+            margin-left: 0px;
+        }
+
+        #cont1>p {
+            padding: 0;
+            margin: 0;
+            width: auto;
+            height: 20px;
+            font-size: 12px;
+            word-spacing: 35px;
+        }
+
+        #cont2 {
+            width: 100%;
+            height: 65%;
+            border: 4px solid #666;
+            border-radius: 15px;
+            position: relative;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        nav {
+            width: 100px;
+            height: 30px;
+            position: absolute;
+            top: 60px;
+            left: 90px;
+            z-index: 999;
+        }
+
+        nav>div {
+            float: left;
+            background: gray;
+            width: 20px;
+            height: 20px;
+            margin-right: 20px;
+            text-align: center;
+            line-height: 20px;
+            color: white;
+        }
+
+        h4 {
+            color: #013567;
+            margin: 0;
+            width: 100%;
+            text-align: right;
+            position: absolute;
+            top: 20px;
+            left: -300px;
+        }
+
+        #cont2>ul>li {
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            right: 20px;
+            top: 30px;
+            display: none;
+        }
+
+        #pic1 {
+            background-image: url(img/image4.jpg);
+            background-repeat: no-repeat;
+            background-position: -20px -38px;
+        }
+
+        #pic2 {
+            background-image: url(img/image4.jpg);
+            background-repeat: no-repeat;
+            background-position: -20px -200px;
+        }
+
+        #cont2>ul>li.see {
+            display: block;
+        }
+
+        #pic1>div,
+        #pic2>div {
+            width: 300px;
+            height: 100px;
+            position: absolute;
+            top: 70px;
+            left: -200px;
+        }
+
+        .pic>div>p {
+            color: red;
+            font-weight: 600;
+        }
+
+        .pic>div>span {
+            font-size: 12px;
+        }
+
+        nav>div.rock {
+            background: red;
+        }
+
+        #three {
+            width: 20%;
+            height: 500%;
+            margin: auto;
+        }
+        #wrap2 {
+            width: 35%;
+            height: 280px;
+            border: 4px solid gray;
+            border-radius: 15px;
+            float: right;
+            position: relative;
+        }
+    
+        #hot {
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            width: 120px;
+            height: 20px;
+            background: white;
+        }
+        .small {
+            width: 255px;
+            height: 75px;
+            margin-top: 15px;
+            position: relative;
+        }
+        .small > div {
+            width: 80px;
+            height: 75px;
+            position: absolute;
+            top:0px;
+            left: 0px;
+
+      }
+        .small > p {
+            position: absolute;
+            top: 10px;
+            left: 85px;
+            font-size: 11px;
+        }
+        .small > span {
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            top: 3px;
+            left: 85px;
+            font-size: 11px;
+            font-weight: 600;
+            color: red;
+        }
+        #small_pic1 {
+            background-image: url(img/image5.jpg);
+            background-repeat: no-repeat;
+            background-position: -50px -100px;
+        } 
+        #small_pic2 {
+            background-image: url(img/image5.jpg);
+            background-repeat: no-repeat;
+            background-position: -50px -210px;
+        } 
+        #small_pic3 {
+            background-image: url(img/image5.jpg);
+            background-repeat: no-repeat;
+            background-position: -50px -320px;
+        } 
+        #wrap3 {
+            width: 36%;
+            height: 90px;
+            float: right;
+            margin-top: 5px;
+        }
+        #wrap3 > #small_pic4 {
+            width: 185px;
+            height: 55px;
+            background-image: url(img/image5.jpg);
+            background-repeat: no-repeat;
+            background-position: -35px -25px;
+            margin-top: 20px;
+            float: left;
+        }
+        #posi {
+            width: 80px;
+            height: 80px;
+            float: left;
+        }
+        #go {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: red;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            margin: auto;
+            margin-top: 5px;
+        }
+        #gall {
+            color: #013567;
+            font-size: 15px;
+            font-weight: 600;
+        }
+        footer{
+            width: 100%;
+            height: 70px;
+            position: relative;
+        }
+        footer > div >span {
+            font-size: 12px;
+        }
+        footer > #bag {
+            position: absolute;
+            top: 10px;
+            left: 50px;
+           
+        }
+        #bag > span {
+             border-right: 1px solid black;
+             padding: 0 15px;
+        }
+        #adr {
+            position: absolute;
+            right: 100px;
+            bottom: 10px;
+            font-size: 10px;
+            text-align: right;
+            color: gray;
+        }
+        #lastlogo >img {
+            width: 45px;
+            height: 45px;
+            position: absolute;
+            bottom: 0px;
+            right: 60px;
+        }
+        ul > li > div > img {
+            width: 50px;
+            height: 70px;
+            position: absolute;
+            right: 120px;
+            top: -50px;
+        }
+        #menu > div > a {
+            color: #fff;
+        }
+        #menu > div > a:hover {
+            color: #cdff02;
+        }
+        #login > div > a:hover {
+            color: #999;
+
+        }
